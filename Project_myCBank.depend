@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1665618898 source:/home/mus02/Documents/temp/Project_myCBank/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	"BankHeader.h"
+
+1665629500 /home/mus02/Documents/temp/Project_myCBank/BankHeader.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
