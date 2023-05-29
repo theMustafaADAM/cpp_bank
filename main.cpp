@@ -11,7 +11,8 @@ void theMainMenuScreen();   void TrnsactionScreen();    void ManageUserScreen();
 
 void BalancesScreen()
 {
-    system("clear");    double BalanceSum = 0.0;
+    system("cls");    double BalanceSum = 0.0;
+    //system("clear");    double BalanceSum = 0.0;
 
     showRecord = PrintFileContentOnScreen(BankClient);
 
@@ -27,7 +28,7 @@ void BalancesScreen()
 
 void WithdrawScreen()
 {
-    system("clear");
+    system("cls");
     PrintWithdrawScreen();
 
     FindRecord = ReadString("\nPlease enter Account Number?  ");
@@ -39,7 +40,7 @@ void WithdrawScreen()
 
 void DepositsScreen()
 {
-    system("clear");
+    system("cls");
     PrintDepositsScreen();
 
     FindRecord = ReadString("\nPlease enter Account Number?  ");
@@ -51,7 +52,7 @@ void DepositsScreen()
 
 void ShowClientScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eShowClient)){
 
@@ -66,7 +67,7 @@ void ShowClientScreen()
 
 void ShowUserScreen()
 {
-    system("clear");
+    system("cls");
 
     showUsers = PrintUserFileContentOnScreen(BankUser);
     PrinMyUsersData(showUsers);
@@ -77,7 +78,7 @@ void ShowUserScreen()
 
 void AaddClientScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eAddClients)){
 
@@ -104,7 +105,7 @@ void AaddClientScreen()
 
 void AaddUserScreen()
 {
-    system("clear");
+    system("cls");
     PrintNewUserScreen();
 
     do {
@@ -123,7 +124,7 @@ void AaddUserScreen()
 
 void DletClientScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eDeletClients)){
 
@@ -143,7 +144,7 @@ void DletClientScreen()
 
 void DletUserScreen()
 {
-    system("clear");
+    system("cls");
     PrintDeleteUserScreen();
 
 
@@ -161,7 +162,7 @@ void DletUserScreen()
 
 void UpdtClientScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eUpdateClients)){
 
@@ -181,7 +182,7 @@ void UpdtClientScreen()
 
 void UpdtUserScreen()
 {
-    system("clear");
+    system("cls");
     PrintUpdateUserScreen();
 
     showUsers = PrintUserFileContentOnScreen(BankUser);
@@ -198,7 +199,7 @@ void UpdtUserScreen()
 
 void FindClientScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eFindClients)){
 
@@ -227,7 +228,7 @@ void FindClientScreen()
 
 void FindUserScreen()
 {
-    system("clear");
+    system("cls");
     PrintFindUserScreen();
 
     showUsers = PrintUserFileContentOnScreen(BankUser);
@@ -251,7 +252,7 @@ void FindUserScreen()
 
 void TrnsactionScreen()
 {
-    system("clear");
+    system("cls");
 
     if(!CheckAccessPermissions(enMainMenuPermissions::eTransactions)){
 
@@ -273,7 +274,7 @@ void TrnsactionScreen()
 
 void ExitScreen()
 {
-    system("clear");
+    system("cls");
     PrintGodBye();
 }
 
@@ -284,7 +285,7 @@ void ManageUserScreen()
 
         PrintAccessDeniedScreen();  PrintPressENTER();  theMainMenuScreen();    return;  }
 
-    system("clear");    unsigned short chose = 0;
+    system("cls");    unsigned short chose = 0;
 
     PrintManageUserScreen();
 
@@ -303,7 +304,7 @@ void ManageUserScreen()
 
 void MainLoginScreen()
 {
-    system("clear");
+    system("cls");
 
     PrintLoginScreen();
 
@@ -313,7 +314,7 @@ void MainLoginScreen()
 
 void theMainMenuScreen()
 {
-    system("clear"); unsigned short chose = 0;
+    system("cls"); unsigned short chose = 0;
 
     PrintMainScreenChoise();
 

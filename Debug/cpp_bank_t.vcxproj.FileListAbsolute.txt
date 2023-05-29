@@ -1,0 +1,2 @@
+C:\Users\smart\Dropbox\CppProgramming\MyProjects\Project_myCBank\Debug\cpp_bank_t.vcxproj.AssemblyReference.cache
+C:\Users\smart\Dropbox\CppProgramming\MyProjects\Project_myCBank\Debug\cpp_bank_t.exe
